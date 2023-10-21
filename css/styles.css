@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ocultar {
+  display: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+}
+.inicio {
+  display: flex;
+  flex-direction: column;
+}
+.divIngreso {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin: 10% auto;
+  border-radius: 10px;
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+}
+
+.inputArchivo {
+  display: none;
+}
+
+.label-carga-logo {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #fff;
+  border: 5px dotted #af0909;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+  padding-left: 10px;
+}
+
+.entrenador {
+  padding-right: 20px;
+  color: white;
+}
+
+h2 span {
+  color: white;
+}
+
+#ingresar {
+  width: 50%;
+  margin: auto;
+  background-color: #af0909;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  height: 2rem;
+  cursor: pointer;
+}
+
+header {
+  font-family: "Shadows Into Light", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.filtroEjercicios {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.backgroundSweetAlert {
+  background-color: rgba(0, 0, 0, 0.541);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+#alumnos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.icono {
+  width: 80px;
+  height: 80px;
+}
+
+.icono_pesa {
+  width: 150px;
+  height: 150px;
+}
+#alumnos label {
+  font-size: 1.8rem;
+}
+#alumnos select {
+  font-family: "Shadows Into Light", cursive;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#alumnos select option {
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: #af0909;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  height: 2rem;
+  cursor: pointer;
+}
+.button {
+  background-color: #af0909;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  height: 2rem;
+  cursor: pointer;
+}
+
+button.seleccionado {
+  border: 1px solid white;
+}
+
+.button :hover {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 5px #0000ff;
+}
+
+button:hover,
+#ingresar:hover {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 5px #0000ff;
+  transition: 0.2s;
+  transform: scale(1.02, 1.02);
+}
+.ingresoDatos {
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  position: sticky;
+  z-index: 1000;
+  top: 10px;
+  box-shadow: 0px 0px 20px gray;
+}
+
+#formularioRutinas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  padding: 10px;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.buscadorEjercicio {
+  position: relative;
+}
+input {
+  height: 2rem;
+  border-radius: 5px;
+  padding-left: 2px;
+}
+
+#inputBuscador {
+  width: 300px;
+}
+
+.inputNumeros {
+  width: 40px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.syr {
+  margin-right: 10px;
+  text-align: center;
+  width: 100px;
+}
+.seriesYReps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+label {
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.tituloDia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "h3 h3 h3 button";
+  column-gap: 10px;
+  row-gap: 20px;
+  background-color: rgb(109, 5, 5);
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.tituloDia h3 {
+  grid-area: h3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tituloDia button {
+  grid-area: button;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}
+.ejercicio {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px red;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.imagenX {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.imagenM {
+  width: 50px;
+  height: 50px;
+}
+.imagenV {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.ulEjercicios {
+  list-style: none;
+  background-color: black;
+  position: absolute;
+  width: 300px;
+}
+
+ul .liEjercicios {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+}
+ul .liEjercicios:hover {
+  background-color: gray;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.btnQuitar {
+  padding-bottom: 10px;
+}
+
+.musculos {
+  background-color: rgba(0, 0, 0, 0.541);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+  z-index: 1000;
+  position: absolute;
+  top: 250px;
+}
+.divFiltro {
+  padding: 5px;
+}
+
+@media (max-width: 600px) and (min-width: 320px) {
+  #header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 100px;
+    height: 80px;
+  }
+
+  .entrenador {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #guardaEntrenador {
+    height: 2.5rem;
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+
+  #alumnos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #labelAlumnos {
+    width: 320px;
+    font-size: 0.5rem;
+  }
+  #listadoAlumnos {
+    font-size: 3rem;
+  }
+
+  button {
+    height: 3rem;
+  }
+  .ingresoDatos {
+    flex-direction: column;
+  }
+  #formularioRutinas {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .inputDias {
+    flex-direction: row;
+  }
+
+  .buscadorEjercicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  ul {
+    list-style: none;
+    background-color: black;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+  }
+
+  .seriesYReps {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .filtroEjercicios {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c d";
+    padding: 10px;
+    gap: 20px;
+  }
+
+  #btnBorrarRutina {
+    grid-area: a;
+  }
+  #btnBorrarRutina {
+    grid-area: b;
+  }
+  #cargarRutina {
+    grid-area: c;
+  }
+  #btnQuitarAlumno {
+    grid-area: d;
+  }
+
+  .ejercicio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .musculoEjercicio {
+    text-decoration: underline;
+  }
+  .tituloEjercicio {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+  }
+
+  .dato {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+
+  .divMusculo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .divNombre {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nombreEjercicio {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .divBotones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .imagenX {
+    width: 40px;
+    height: 40px;
+  }
+  .imagenV {
+    height: 50px;
+    width: 50px;
+  }
+}
