@@ -1,3 +1,5 @@
+//ELEMNTOS DEL DOM DE LA PRIMER PANTALLA DE INGRESO
+
 const usuario = document.querySelector("#nombreUsuario");
 const repiteUsuario = document.querySelector("#repiteUsuario");
 const ingresar = document.querySelector("#ingresar");
@@ -8,6 +10,7 @@ const visualizarLogo = document.querySelector("#visualizarLogo");
 const nombreEntrenador = document.querySelector("#nombreEntrenador");
 const guardarPerfil = document.querySelector("#guardaEntrenador");
 
+//Creo evento para que ingresar con un nombre de usuario e imagen de la empresa y luego se renderiza en la página siguiente de armado de rutinas
 ingresar.addEventListener("click", () => {
   const nUsuario = usuario.value;
   const rUsuario = repiteUsuario.value;
@@ -38,7 +41,7 @@ ingresar.addEventListener("click", () => {
     });
   }
 });
-
+//Guarda perfil del profesor, la idea es que cada profesor luego tenga sus alumnos guardados
 guardarPerfil.addEventListener("click", () => {
   const entrenador = nombreEntrenador.textContent;
   const rutinaEntrenador = seccionRutinas.innerHTML;
@@ -225,8 +228,6 @@ inputBuscar.addEventListener("input", function () {
   }
 });
 
-//Guardo lo que estoy confeccionando en el localStorage
-
 // Obtengo el botón para  para eliminar rutina de la pantalla también
 
 const btnBorrarRutina = document.querySelector("#btnBorrarRutina");
@@ -276,6 +277,7 @@ btnBorrarRutina.addEventListener("click", function () {
   });
 });
 
+//Llamo elemento del DOM y creo evento para poder guardar la rutina al alumno o crear uno nuevo usuario si no existe
 const cargarAAlumno = document.querySelector("#cargarAAlumno");
 
 cargarAAlumno.addEventListener("click", async () => {
@@ -347,6 +349,7 @@ cargarAAlumno.addEventListener("click", async () => {
   }
 });
 
+//Llamo elemento del DOM para crear evento donde cargo la rutina del alumno que ya esta guardada
 const cargarRutina = document.querySelector("#cargarRutina");
 
 cargarRutina.addEventListener("click", async () => {
@@ -394,11 +397,11 @@ for (const alumno of alumnos) {
 }
 
 listadoAlumnos.addEventListener("click", (event) => {
-  // Obtiene el valor de la opción seleccionada
+  // Obtiene el valor del alumno
   const opcionSeleccionada = event.target.value;
   const rutinaStorage = localStorage.getItem(opcionSeleccionada);
 
-  // Muestra los datos relacionados en algún lugar de tu página
+  // Muestra loa rutina que tiene guardada ese alumno
   rutina.innerHTML = rutinaStorage;
 });
 
