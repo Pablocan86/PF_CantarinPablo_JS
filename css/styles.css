@@ -518,3 +518,49 @@ footer {
     width: 50px;
   }
 }
+
+@media (max-width: 390px) {
+  .ejercicio {
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-rows: 4 1fr;
+    grid-template-areas:
+      "musculo imagenMusculo "
+      "ejercicio ejercicio"
+      "syp syp"
+      "video exis";
+    justify-items: center;
+  }
+
+  .imagenM {
+    grid-area: imagenMusculo;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .musculoEjercicio {
+    grid-area: musculo;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .tituloEjercicio {
+    grid-area: ejercicio;
+    text-align: center;
+    width: 90%;
+  }
+  .dato {
+    grid-area: syp;
+    text-align: center;
+    width: 80%;
+  }
+  .imagenV {
+    grid-area: video;
+    margin-left: 20px;
+  }
+
+  .imagenX {
+    grid-area: exis;
+  }
+}
